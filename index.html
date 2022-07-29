@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="main">
+
+      <div class="header">
+        <img src="images/logo.svg" alt="logo">
+
+        <img class="icon-open" onclick="openNav()" src="images/icon-menu.svg" alt="open">
+        
+      </div>
+      <div class="body">
+      <img id="homeimg" class="home-image" onclick="document.getElementById('homeimg').src='images/image-hero-desktop.png'" src="images/image-hero-mobile.png" alt="home">
+     <div class="body-text">
+      <h1 class="heading">Make remote work</h1>
+      <p class="text">Get your team in sync, no matter your location. Stream line processes, create team rituals, and watch productivity soar.</p>
+      <span class="button">Learn more</span>
+
+      <div class="client">
+        <img class="first" src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img class="last" src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+
+
+    </div>
+
+    
+
+    <div class="dropcontent">
+      <img class="icon-close" onclick="closeNav()" src="images/icon-close-menu.svg" alt="close">
+      <div class="features">
+        <div class="featuresBtn" onclick="openFeatures()">
+        Features
+        <img src="images/icon-arrow-down.svg"  alt="icon down">
+      </div>
+        <div class="featuredOptions">
+          <li href=""><img src="images/icon-todo.svg" alt="icon todo"> Todo list</li>
+          <li href=""><img src="images/icon-calendar.svg" alt="calender icon"> Calender</li>
+          <li href=""><img src="images/icon-reminders.svg" alt="reminder icon"> Reminder</li>
+          <li href=""><img src="images/icon-planning.svg" alt="planning icon"> Planning</li>
+        </div>
+      </div>
+      <div class="company">
+        <div class="companyBtn" onclick="openCompany()">
+       Company
+       <img src="images/icon-arrow-down.svg"  alt="icon down">
+      </div>
+       <div class="companyOptions">
+         <li href="">History</li>
+         <li href="">Our Team</li>
+         <li href="">Blog</li>
+       </div>
+     </div>
+     <div class="career">Career</div>
+     <div class="about">About</div>
+     <span class="loginBtn">Login</span>
+    <span class="registerBtn">Register</span>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Michael Ojogbo</a>.
+    </div>
+  </div>
+
+  </div>
+  
+ 
+
+ 
+</body>
+</html>
